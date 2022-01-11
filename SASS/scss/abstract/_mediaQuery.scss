@@ -1,0 +1,13 @@
+$breakpoints: (
+  celular: 360px,
+  mediano:540px,
+  medianoTableta:760px,
+  tablet:890px,
+  pc:1024px   
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and(min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}

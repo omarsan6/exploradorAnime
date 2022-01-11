@@ -1,0 +1,67 @@
+@use '../abstract/variables' as b;
+@use '../abstract/mediaQuery' as m;
+
+aside{
+    width: 55px;
+    height: 170px;
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    //border: 1px solid red;
+
+   @include m.media-up(celular){
+       width: 70px;
+       height: 190px;
+   }
+
+   @include m.media-up(mediano){
+        width: 90px;
+        height: 210px;
+    }
+
+    @include m.media-up(medianoTableta){
+        width: 110px;
+        height: 250px;
+    }
+
+}
+
+//iconos
+aside a{
+    width: 30px;
+    height: 30px;
+    background-color: b.$botonColor;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 17px;
+
+    @include m.media-up(celular){
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    @include m.media-up(mediano){
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    @include m.media-up(medianoTableta){
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    @include m.media-up(medianoTableta){
+        font-size: 24px;
+    }
+}

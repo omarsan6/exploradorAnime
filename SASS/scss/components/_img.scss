@@ -1,0 +1,111 @@
+@use '../abstract/mediaQuery' as m;
+
+main{
+    width: 100%;
+    //height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @include m.media-up(medianoTableta){
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+
+    @include m.media-up(tablet){
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 200px;
+    }
+
+    @include m.media-up(tablet){
+        gap: 120px;
+    }
+}
+
+figure{
+    position: relative;
+    width: 190px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.2));
+    margin: 0;
+    margin-bottom: 10px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1); */
+
+    @include m.media-up(celular){
+        width: 195px;
+        height: 298px;
+    }
+
+    @include m.media-up(mediano){
+        width: 215px;
+        height: 318px;
+    }
+
+    @include m.media-up(medianoTableta){
+        width: 230px;
+        height: 338px;
+    }
+
+    @include m.media-up(tablet){
+        width: 270px;
+        height: 378px;
+    }
+
+}
+
+img{
+    margin-top: 20px;
+    width: 40%;
+
+    @include m.media-up(mediano){
+        width: 45%;
+    }
+}
+
+figcaption{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.3;
+    padding-left: 10px;
+    padding-inline-end: 10px;
+
+    @include m.media-up(mediano){
+        font-size: 14px;
+    }
+
+    @include m.media-up(mediano){
+        font-size: 15px;
+    }
+}
+
+a{
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    background-color: rgb(2, 2, 148);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+  
+}
+
+a:hover{
+    background-color: rgba(2, 2, 148, 0.863);
+}
+
+.subir{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
