@@ -1,0 +1,12 @@
+@use '../abstract/mediaQuery' as m;
+.oval{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 40%;
+    //border: 1px solid red;
+
+    @include m.media-up(mediano){
+        left: 45%;
+    }
+}

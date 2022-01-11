@@ -152,6 +152,12 @@ h1 {
     height: 40px;
   }
 }
+.header__text {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding-left: 2px;
+}
 @media screen and (min-width: 760px) {
   .header__text {
     width: 380px;
@@ -203,19 +209,20 @@ aside {
   bottom: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 20px;
   align-items: center;
 }
 @media screen and (min-width: 360px) {
   aside {
     width: 70px;
-    height: 190px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 540px) {
   aside {
     width: 90px;
-    height: 210px;
+    height: 230px;
   }
 }
 @media screen and (min-width: 760px) {
@@ -379,6 +386,18 @@ a:hover {
 .subir {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+.oval {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 40%;
+}
+@media screen and (min-width: 540px) {
+  .oval {
+    left: 45%;
+  }
 }
 
 * {

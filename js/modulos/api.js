@@ -13,7 +13,7 @@ export default function buscador() {
         if (nombre == '') return alert("Ingrese un personaje")
 
         try {
-            $oval.innerHTML = `<img src=../../assets/oval.svg srcset=../../assets/oval.svg></img>`
+            $oval.innerHTML = `<img src=../../assets/oval.svg srcset=../../assets/oval.svg class="oval"></img>`
             let res = await fetch(url)//hacemos la peticion a la api
             let json = await res.json()
 
@@ -65,6 +65,7 @@ export default function buscador() {
             $fragment.appendChild(clone)
 
             $main.appendChild($fragment)
+
 
             $oval.innerHTML = ""
         })

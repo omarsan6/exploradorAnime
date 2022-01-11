@@ -9,18 +9,19 @@ aside{
     bottom: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 20px;
     align-items: center;
     //border: 1px solid red;
 
    @include m.media-up(celular){
        width: 70px;
-       height: 190px;
+       height: 200px;
    }
 
    @include m.media-up(mediano){
         width: 90px;
-        height: 210px;
+        height: 230px;
     }
 
     @include m.media-up(medianoTableta){

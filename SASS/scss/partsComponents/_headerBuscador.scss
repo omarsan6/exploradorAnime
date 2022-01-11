@@ -67,6 +67,10 @@
 
     //text
     &__text{
+        background-color: white;
+        border: none;
+        outline: none;
+        padding-left: 2px;
         @include m.media-up(medianoTableta){
             width: 380px;
             font-size: 19px;
